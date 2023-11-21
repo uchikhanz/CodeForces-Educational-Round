@@ -1,0 +1,66 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define forn(i, n) for(int i = 0; i < n; i++)
+
+const int N = 1005;
+int n, m;
+string s[N];
+bool vis[N][N];
+bool revis[N][N];
+map<pair<int, int>, pair<int, int>> parent;
+int dx4[4]={1,-1,0,0};
+int dy4[4]={0,0,1,-1};
+int tot = 0;
+int weight[N][N];
+
+void dfs(int r_x, int r_y, int x, int y){
+	tot ++;
+	parent[{x, y}] = {r_x, r_y};
+	vis[x][y] = 1;
+	forn(i, 4){
+		int dx = x + dx4[i];
+		int dy = y + dy4[i];
+		if(0 <= dx && dx < n && 0 <= dy && dy < m && vis[dx][dy] == 0 && s[dx][dy] == '.'){
+			dfs(r_x, r_y, dx, dy);
+		}
+	}
+}
+
+int main(){
+	cin >> n >> m;
+	forn(i, n) cin >> s[i];
+	forn(i, n){
+		forn(j, m){
+			tot = 0;
+			if(s[i][j] == '.' && vis[i][j] == 0){
+				dfs(i, j, i, j);
+				weight[i][j] = tot % 10;
+			}
+		}
+	}
+	forn(i, n){
+		forn(j, m){
+			if(s[i][j] == '*'){
+				int ans = 1;
+				map<pair<int, int>, int> S;
+				forn(r, 4){
+					int dx = i + dx4[r];
+					int dy = j + dy4[r];
+					if(0 <= dx && dx < n && 0 <= dy && dy < m && s[dx][dy] == '.'){
+						pair<int, int> cur = parent[{dx, dy}];
+						S[{cur.first, cur.second}] ++; 
+						//cout << cur.first << " - " << cur.second << " -- " << weight[cur.first][cur.second] << '\n';
+					}
+				}
+				for(auto x : S){
+					ans += weight[x.first.first][x.first.second];
+				}
+				//cout << '\n';
+				cout << ans % 10;
+			}else{
+				cout << '.';
+			}
+		}
+		cout << '\n';
+	}
+}
