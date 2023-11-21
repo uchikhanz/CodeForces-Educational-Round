@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define forn(i, n) for(int i = 0; i < n; i++)
+
+int main(){
+    int n, m;
+    cin >> n >> m;
+    vector<int> v(n);
+    forn(i, n) cin >> v[i];
+    sort(begin(v), end(v));
+    int count = 0;
+    for(int i = n - 1; i >= 0; i--){
+          if(m > 0) m -= v[i], count ++;
+    }
+    cout << count;
+}
