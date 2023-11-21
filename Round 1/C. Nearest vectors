@@ -5,12 +5,12 @@ const long double EPS = 1e-18;
 
 int main() {
 	int n;
-  cin >> n;
+  	cin >> n;
 	long double ans = 1e9;
 	vector<pair<long double,int>> v;
 	forn(i, n){
 		int x, y;
-    cin >> x >> y;
+    		cin >> x >> y;
 		long double alpha = atan2l(y, x);
 		v.push_back({alpha, i + 1});
                 //cout << i + 1 << " --- " << alpha << '\n';
@@ -26,7 +26,7 @@ int main() {
 			ans = mn;
 			id = {v[i + 1].second, v[i].second};
 		}
-    //cout << i + 1 << " --- " << mn << '\n';
+    		//cout << i + 1 << " --- " << mn << '\n';
 	}
 	cout << id.first << ' ' << id.second << '\n';
         //cout << atan2l(10, -1) << "AA";
