@@ -6,8 +6,8 @@ int main() {
 	cout << fixed << setprecision(9);
 	long double x1, y1, r1;
 	long double x2, y2, r2;
-  cin >> x1 >> y1 >> r1;
-  cin >> x2 >> y2 >> r2;
+	cin >> x1 >> y1 >> r1;
+	cin >> x2 >> y2 >> r2;
 	long double dist = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
 	if(dist >= r1 + r2){
 		cout << double(0);
