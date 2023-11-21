@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define forn(i, n) for(int i = 0; i < n; i++)
+
+int main(){
+	int n, m;
+        cin >> n >> m;
+	int a[n + 5][m + 5];
+	int mx_av = 0, pos = -1;
+	forn(i, n){
+		forn(j, m){
+			cin >> a[i][j];
+		}
+		int mn = *min_element(a[i], a[i] + m);
+		if(mx_av < mn){
+			mx_av = mn;
+			pos = i;
+		}
+	}
+	cout << mx_av;
+}
