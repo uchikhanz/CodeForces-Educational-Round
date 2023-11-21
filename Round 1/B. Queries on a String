@@ -8,8 +8,8 @@ int main(){
 	cin >> s >> q;
 	while(q--){
 		int l, r, c;
-    cin >> l >> r >> c;
-    l--, r--;
+    		cin >> l >> r >> c;
+    		l--, r--;
 		int sz = r - l + 1;
 		string substr = s.substr(l, sz);
 		c %= sz;
