@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define forn(i, n) for(int i = 0; i < n; i++)
+
+int start(char c){
+        if (c == '<' || c == '{' || c == '[' || c == '(') return 1;
+        return 2;
+}
+ 
+bool paired(char a, char b){
+	if (a == '<' && b == '>') return true;
+	if (a == '(' && b == ')') return true;
+	if (a == '[' && b == ']') return true;
+	if (a == '{' && b == '}') return true;
+	return false;
+}
+
+int main(){
+	int ans = 0;
+        string s;
+        cin >> s;
+        stack<int> stk;
+        int n = size(s);
+        forn(i, n){
+        	char c = s[i];
+        	if(start(c) == 1){
+        		stk.push(c);
+        		continue;
+        	}
+        	if(stk.size() == 0){
+        		cout << "Impossible";
+        		return 0;
+        	}
+        	char p = stk.top();
+        	if(!paired(p, c)) ans ++;
+        	stk.pop();
+        }
+        if(stk.size()) cout << "Impossible";
+        else cout << ans;
+}
