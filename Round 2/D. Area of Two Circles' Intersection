@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define forn(i, n) for(int i = 0; i < n; i++)
+
+int main() {
+	cout << fixed << setprecision(9);
+	long double x1, y1, r1;
+	long double x2, y2, r2;
+  cin >> x1 >> y1 >> r1;
+  cin >> x2 >> y2 >> r2;
+	long double dist = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+	if(dist >= r1 + r2){
+		cout << double(0);
+		return 0;
+	}else if(dist + r1 <= r2){
+		double ans = r1 * r1 * acos(-1);
+		cout << ans;
+		return 0;
+	}else if(dist + r2 <= r1){
+		double ans = r2 * r2 * acos(-1);
+		cout << ans;
+		return 0;
+	}
+	long double a1 = (r2 * r2 - r1 * r1 + dist * dist) / (2.0 * dist);
+	long double a2 = (r1 * r1 - r2 * r2 + dist * dist) / (2.0 * dist);
+	long double alp = acos(a1 / r2);
+	long double bet = acos(a2 / r1);
+	long double S1 = alp * r2 * r2 - r2 * r2 * cos(alp) * sin(alp);
+	long double S2 = bet * r1 * r1 - r1 * r1 * cos(bet) * sin(bet);
+	cout << S1 + S2;
+}
