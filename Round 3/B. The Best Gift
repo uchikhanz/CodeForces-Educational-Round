@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define forn(i, n) for(int i = 0; i < n; i++)
+
+int main(){
+    int n, m;
+    cin >> n >> m;
+    vector<long long> v(n);
+    vector<long long> mp(11, 0);
+    forn(i, n) cin >> v[i];
+    forn(i, n){
+            mp[v[i]] ++;
+    }
+    long long ans = n * (n - 1LL) / 2LL;
+    forn(i, 11){
+            long long r = mp[i];
+            ans -= (r - 1LL) * r / 2LL;
+    }
+    cout << ans;
+}
