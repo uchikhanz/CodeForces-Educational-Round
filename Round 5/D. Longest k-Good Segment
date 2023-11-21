@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define forn(i, n) for(int (i) = 0; (i) < (n); (i)++)
+
+int main() {
+	ios_base::sync_with_stdio(0);
+	cin.tie(0), cout.tie(0);
+
+	int n, k;
+	scanf("%d %d", &n, &k);
+	vector<int> a(n);
+	
+	for (int i = 0; i < n; i++) scanf("%d", &a[i]);
+	
+	int lo = 0, hi = 0, res = 0, cur = 0;
+	pair<int, int> ans;
+	unordered_map<int, int> mp;
+	
+	forn(lo, n){
+		while(cur <= k && hi < n){
+			if(mp[a[hi]] == 0){
+				if(cur < k) cur ++;
+				else break;
+			}
+			mp[a[hi]] ++;
+			hi ++;
+		}
+		//cout << hi << " --- " << cur << '\n';
+		if(res < hi - lo + 1){
+			res = hi - lo + 1;
+			ans = {lo + 1, hi};
+		}
+		mp[a[lo]] --;
+		if(mp[a[lo]] == 0) cur --;
+	}
+	
+	cout << ans.first << ' ' << ans.second << endl;
+	return 0;
+}
