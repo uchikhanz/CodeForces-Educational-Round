@@ -15,7 +15,8 @@
          <summary>B. Queries on A String</summary>
          
             Query бүрт өгөгдсөн үйлдлийг хийхэд болно.
-      </details>
+   [Show Code](https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%201/A.%20Tricky%20Sum.cpp/)
+   </details>
       <details>
          <summary>C. Nearest vectors</summary>
 
