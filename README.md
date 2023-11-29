@@ -72,6 +72,7 @@
          <summary>D. Area of Two Circles' Intersection</summary>
       </details>
    </details>
+   
    [Бодолт](./Round%203/)
 
 7. [Educational Round 4](https://codeforces.com/contest/612)
