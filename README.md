@@ -41,21 +41,35 @@
       <details>
          <summary>A. Extract Numbers</summary>
 
-            
+            Өгөгдсөн нөхцөлийн дараа ',' эсвэл ';'-р салгаад тоо мөн эсэхийг шалгахад болно.
+
+   [Show Code](https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%202/A.%20Extract%20Numbers.cpp/)
       </details>
       <details>
          <summary>B. Queries about less or equal elements</summary>
+
+            Хоёртын хайлт юмуу upper_bound ашиглаад өгөгдсөн нөхцөлийн дагуу бичнэ.
+   [Show Code](https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%202/B.%20Queries%20about%20less%20or%20equal%20elements.cpp/)
       </details>
       <details>
          <summary>C. Make Palindrome</summary>
+
+            Тухайн үсэг тэгш тооны орсон бол ямар нэг асуудал үүсгэхгүй. Харин сондгой орсон тохиолдолд нийт үгийн
+            урт сондгой үед хамгийн бага сондгой тоогоор орсон үсгийг үлдээнэ.
+   [Show Code](https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%201/C.%20Make%20Palindrome.cpp/)
       </details>
       <details>
          <summary>D. Area of Two Circles' Intersection</summary>
+         
+            Өгөгдсөн хоёр тойргийн төвийн зайг бодоод r1 + r2 <= dist байвал 0 байна.
+            dist + r1 <= r2 эсвэл dist + r2 <= r1 байх үед аль бага талбайтай тойргийн талбайг хэвлэнэ.
+            Эсрэг тохиолдолд тухайн хоёр тойрог яг хоёр цэгээр огтлолцоно. Төсөө ашиглан огтлолын
+            талбайг олох томьёо олоход хангалттай.
+   [Show Code](https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%201/D.%20Area%20of%20Two%20Circles'%20Intersection.cpp/)
       </details>
    </details>
-   
-   [Бодолт](./Round%202/)
 
+   
 5. [Educational Round 3](https://codeforces.com/contest/609)
    <details>
       <summary>Санаа</summary>
