@@ -6,8 +6,8 @@
       <details>
          <summary>A. Tricky Sum</summary>
          
-            $Sum = n * (n + 1) / 2 - 2 * B$  
-            $B = 2^0 + 2^1 + 2^2 + \ldots + 2^x = 2^{(x + 1)} - 1$
+            Sum = n * (n + 1) / 2 - 2 * B  
+            B = 2^0 + 2^1 + 2^2 + ... + 2^x = 2^{(x + 1)} - 1
       </details>
    </details>  
    
