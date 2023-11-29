@@ -41,21 +41,28 @@
       <details>
          <summary>A. Extract Numbers</summary>
 
-            Өгөгдсөн нөхцөлийн дараа ',' эсвэл ';'-р салгаад тоо мөн эсэхийг шалгахад болно.
+            Өгөгдсөн нөхцөлийн дагуу ',' эсвэл ';'-р салгаад vector-т хадгалан тоо мөн эсэхийг
+            шалгахад болно.
 
    [Show Code](https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%202/A.%20Extract%20Numbers.cpp/)
       </details>
       <details>
          <summary>B. Queries about less or equal elements</summary>
 
-            Хоёртын хайлт юмуу upper_bound ашиглаад өгөгдсөн нөхцөлийн дагуу бичнэ.
+            Хоёртын хайлт юмуу upper_bound ашиглаад өгөгдсөн нөхцөлийн дагуу B array-н тоо
+            бүрийн A array-д эзлэж болох хамгийн их индексийг олно.
    [Show Code](https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%202/B.%20Queries%20about%20less%20or%20equal%20elements.cpp/)
       </details>
       <details>
          <summary>C. Make Palindrome</summary>
 
-            Тухайн үсэг тэгш тооны орсон бол ямар нэг асуудал үүсгэхгүй. Харин сондгой орсон тохиолдолд нийт үгийн
-            урт сондгой үед хамгийн бага сондгой тоогоор орсон үсгийг үлдээнэ.
+            left - 'a'-с эхлэн 'z' рүү
+            right - 'z'-c эхлэн 'a' руу
+            Хэрвээ left болон right зэрэг сондгой байвал бид right-с нэгийг хасаж тэгш болгоно.
+            Нөгөө талдаа left дээр нэгийг нэмэн тэгш болгоно.
+            Уг стринг сондгой байвал сондгой үлдсэн үсгийг олж хадгална.
+            Тэгш үед 'aaabbdd .... ddbbaaa'
+            Сондгой үед 'aabbcdd .. ff"S"ff .. ddcbbaa'
    [Show Code](https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%201/C.%20Make%20Palindrome.cpp/)
       </details>
       <details>
