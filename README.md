@@ -9,7 +9,7 @@
             Sum = n * (n + 1) / 2 - 2 * B  
             B = 2^0 + 2^1 + 2^2 + ... + 2^x = 2^{(x + 1)} - 1
 
-         [Link](https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%201/A.%20Tricky%20Sum.cpp/)
+   [Link](https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%201/A.%20Tricky%20Sum.cpp/)
       </details>
       <details>
          <summary>B. Queries on A String</summary>
