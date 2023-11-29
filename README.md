@@ -3,11 +3,17 @@
 1. [Educational Round 1](https://codeforces.com/contest/598)  
    <details>
       <summary>Санаа</summary>
+      
       <details>
          <summary>A. Tricky Sum</summary>
          
             Sum = n * (n + 1) / 2 - 2 * B  
             B = 2^0 + 2^1 + 2^2 + ... + 2^x = 2^{(x + 1)} - 1
+      </details>
+
+      <details>
+         <summary>B. Queries on A String</summary>
+         Query бүрт өгөгдсөн үйлдлийг хийхэд болно.
       </details>
    </details>  
    
