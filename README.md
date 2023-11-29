@@ -15,7 +15,7 @@
          <summary>B. Queries on A String</summary>
          
             Query бүрт өгөгдсөн үйлдлийг хийхэд болно.
-   [Show Code](https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%201/A.%20Tricky%20Sum.cpp/)
+   [Show Code](https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%201/B.%20Queries%20on%20a%20String.cpp/)
    </details>
       <details>
          <summary>C. Nearest vectors</summary>
@@ -32,9 +32,7 @@
             эцгээс уг тоог авна.
       </details>
    </details>  
-   
-   [Бодолт](./Round%201/)
-   
+      
 3. [Educational Round 2](https://codeforces.com/contest/600)
    <details>
       <summary>Санаа</summary>
