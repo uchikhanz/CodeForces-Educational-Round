@@ -3,10 +3,10 @@
 1. [Educational Round 1](https://codeforces.com/contest/598)
    [Бодолт](./Round%201/)
 
-   <detials>
+   <details>
       <summary>Expandable Section</summary>
       This is some hidden gem.
-   </detials>
+   </details>
 
 3. [Educational Round 2](https://codeforces.com/contest/600)
    [Бодолт](./Round%202/)
