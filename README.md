@@ -3,14 +3,13 @@
 1. [Educational Round 1](https://codeforces.com/contest/598)  
    <details>
       <summary>Санаа</summary>
-      
       <details>
          <summary>A. Tricky Sum</summary>
          
             Sum = n * (n + 1) / 2 - 2 * B  
             B = 2^0 + 2^1 + 2^2 + ... + 2^x = 2^{(x + 1)} - 1
 
-         [Source](./https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%201/A.%20Tricky%20Sum.cpp/)
+         [Link](https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%201/A.%20Tricky%20Sum.cpp/)
       </details>
       <details>
          <summary>B. Queries on A String</summary>
@@ -89,9 +88,4 @@
 10. [Educational Round 7](https://codeforces.com/contest/622)
     [Бодолт](./Round%207/)
 
-11. [Educational Round 8](https://codeforces.com/contest/628)
-    [Бодолт](./Round%208/)
-
-12. [Educational Round 9](https://codeforces.com/contest/632)
-    [Бодолт](./Round%209/)
-
+11. [Educational Round 8](https:
