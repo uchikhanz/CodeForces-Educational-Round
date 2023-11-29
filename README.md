@@ -22,6 +22,7 @@
 
             atan2l ашиглан X тэнхлэгтэй үүсгэх өнцөг бүрийг олж соортлон, зэрэгцэн орших вектор  
             бүрийн хоорондох өнцгийг олж хамгийн багыг нь сонгон авна.
+   [Show Code](https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%201/C.%20Nearest%20vectors.cpp/)
       </details>
       <details>
          <summary>D. Igor In the Museum</summary>
@@ -30,6 +31,7 @@
             тухайн цэгийн хүүхэд бүрт уг тоог өгөх ба тухайн цэгүүдэд очиж үзсэн гэж тооцно.
             Хэрэв өмнө очиж үзээгүй цэг байвал DFS функц дуудна. Үгүй бол тухайн цэгийн
             эцгээс уг тоог авна.
+   [Show Code](https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%201/D.%20Igor%20In%20the%20Museum.cpp/)
       </details>
    </details>  
       
