@@ -63,7 +63,7 @@
             Уг стринг сондгой байвал сондгой үлдсэн үсгийг олж хадгална.
             Тэгш үед 'aaabbdd .... ddbbaaa'
             Сондгой үед 'aabbcdd .. ff"S"ff .. ddcbbaa'
-   [Show Code](https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%201/C.%20Make%20Palindrome.cpp/)
+   [Show Code](https://github.com/uchikhanz/CodeForces-Educational-Round/blob/main/Round%202/C.%20Make%20Palindrome.cpp/)
       </details>
       <details>
          <summary>D. Area of Two Circles' Intersection</summary>
