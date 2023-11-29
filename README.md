@@ -5,7 +5,8 @@
       <summary>Санаа</summary>
       <details>
          <summary>A. Tricky Sum</summary>
-            $Sum = 2^0 + 2^1 + 2^2 + \ldots + 2^n = 2^{(n + 1)} - 1$ учир нийт нийлбэрээс $Sum$-г 2 удаа хасна.
+            $Sum = n * (n + 1) / 2 - 2 * B$  
+            $B = 2^0 + 2^1 + 2^2 + \ldots + 2^x = 2^{(x + 1)} - 1$
       </details>
    </details>  
    
